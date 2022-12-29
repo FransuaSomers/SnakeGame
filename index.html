@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Game</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+	<div id="overlay">
+			Your Final Score:<span id="final_score"></span>
+			<br>
+			<a onclick="window.location.reload()" href="#">Click To Play Again</a>
+	</div>
+	<canvas id="canvas" width="600" height="450">Sorry, your browser does not support the canvas element
+	</canvas>
+	<div id="stats">
+		<div id="score"></div>
+		<div id="high_score"></div>
+		<button onclick="resetScore()" id="reset_score">Reset High Score</button>
+		<button onclick="buttonPressUp()" id="button">Up</button>
+		<button onclick="buttonPressDown()" id="button">Down</button>
+		<button onclick="buttonPressLeft()" id="button">Left</button>
+		<button onclick="buttonPressRight()" id="button">Right</button>
+	</div>
+</div>
+
+<!-- JQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>	
+
+<!-- Main JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
